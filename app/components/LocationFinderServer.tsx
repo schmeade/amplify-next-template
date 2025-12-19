@@ -13,7 +13,7 @@ export default async function LocationFinderServer() {
     return (
         <>
             <h1>Hello from {locationInfo?.City} - server component</h1>
-            <h2>It is {weatherInfo?.dataseries?.temp2m}</h2>
+            <h2>It is {weatherInfo?.dataseries[0]?.temp2m}&deg;C</h2>
         </>
     )
 }

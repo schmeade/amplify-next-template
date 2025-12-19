@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 export default function LocationFinderServer() {
 
     const [locationInfo, setLocationInfo] = useState({City: 'N/A'})
-    const [weatherInfo, setWeatherInfo] = useState()
+    const [weatherInfo, setWeatherInfo] = useState({dataseries: [{temp2m: ''}]})
 
     const getLocationInfo = async () => {
         const locationRes = await fetch('https://apip.cc/json');
